@@ -1,0 +1,56 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFF9F2;
+}
+#Cabeçalho{
+    text-align: center;
+    background-color: #F5E3C1;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: #FFFFFF;
+    background-color: #8B4513;
+}
+
+h2{
+    font-size: medium;
+    color: #4A2E1A;
+
+}
+
+p{
+    font-size: medium;
+    color: #4A2E1A;
+}
+
+a{
+    text-decoration: none;
+    color: #4A2E1A;
+    
+}
+
+.fotos {
+    display: flex; /* Define o contêiner como Flex */
+    justify-content: space-between; /* Distribui o espaço: a 1ª fica na esquerda, a última na direita, e o centro no meio */
+    align-items: center; /* Alinha verticalmente no centro, se as imagens tiverem alturas diferentes */
+    width: 90%; /* Define a largura da galeria (ex: 90% da tela) */
+    margin: 30px auto; /* Centraliza o contêiner na página e adiciona margem */
+    padding: 0 10px; /* Adiciona um pequeno espaçamento nas laterais */
+}
+
+/* 2. Estilo Padrão para Todas as Imagens */
+/* Garante que elas sejam responsivas e mantenham a proporção */
+.fotos img {
+    /* Largura das imagens: define que cada uma pode ocupar até 30% do espaço do contêiner */
+    max-width: 30%; 
+    width: 100%;
+    height: auto; /* Mantém a proporção */
+    /* Adiciona uma margem horizontal para garantir um pequeno respiro entre elas */
+    margin: 0 5px; 
+    
+    /* Opcional: Estilo de borda para destacar */
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
